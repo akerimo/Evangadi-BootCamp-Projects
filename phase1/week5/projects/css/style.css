@@ -1,71 +1,85 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img {
-   max-width: 100%;
+.body {
+  font-family: "Courier New", Courier, monospace;
 }
 
+/* styling the header and the footer by giving same class name */
 .blue-bg {
-    background-color:#075070;
-      color: #fafcfe;
-    text-align: center;
-
+  background-color: #075070;
+  color: #fafcfe;
+  text-align: center;
+  font-size: 700;
 }
+
+/* styling the header */
 
 .header h1 {
-padding: 28px 0;
+  padding: 28px 0;
 }
 
+/* styling the banner section */
 .banner {
-    margin: 0  0 45px;
-  /* min-width: 100%; */
+  margin: 0 0 45px;
 }
 
+/* making the image of the banner 100% */
+.banner img {
+  width: 100% !important;
+}
+
+/* making the puppies cover 60% of the screen on the mobile */
 .puppies {
-    display: block;
-   width:  60%;
-   margin: 0 auto;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
 }
 
-.first-puppies-section .missing-puppies{
-    display: none;
+/* making missing puppies container invisible on the mobile */
+.first-puppies-section .missing-puppies {
+  display: none;
 }
 
+/* making more puppies section text align in the center */
 .more-puppies-section {
-    text-align: center;
-    margin: 0 0 72px;
-    font-size: 1.5rem;
-
+  text-align: center;
+  margin: 0 0 72px;
+  font-size: 1.5rem;
 }
 
-.puppy-1 , .puppy-2, .puppy-3 ,.puppy-4{
-    margin: 0 0 72px;
+/* giving margin-top for the puppies images  */
+.puppy-1,
+.puppy-2,
+.puppy-3,
+.puppy-4 {
+  margin: 0 0 72px;
 }
 
+/* giving padding-top to h1 inside the footer */
 footer h1 {
-    padding: 63px 0;
-    
+  padding: 63px 0;
 }
 
+/* making break point on 768px and above and making puppies flex */
 @media (width >=768px) {
-    .puppies{
-        display: flex;
-        width: 980px;
-        justify-content: space-between;   
-    }
+  .puppies {
+    display: flex;
+    width: 980px;
+    justify-content: space-between;
+  }
 
-    .first-puppies-section .missing-puppies {
-        display: flex;
-        background-color:#EE4D65;
-        font-size: 60px;
-        width: 310px;
-        height: 310px;
-        align-items: center;
-        text-align: center;
-       
-        
-    }
+  /* making missing puppies section visible and giving width and height */
+  .first-puppies-section .missing-puppies {
+    display: flex;
+    background-color: #ee4d65;
+    font-size: 60px;
+    width: 310px;
+    height: 310px;
+    align-items: center;
+    text-align: center;
+  }
 }
