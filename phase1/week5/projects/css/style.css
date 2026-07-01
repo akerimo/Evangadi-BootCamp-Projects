@@ -18,8 +18,9 @@
 
 /* styling the header */
 
-.header h1 {
+.header {
   padding: 28px 0;
+  width: 100%;
 }
 
 /* styling the banner section */
@@ -32,10 +33,15 @@
   width: 100% !important;
 }
 
-/* making the puppies cover 60% of the screen on the mobile */
-.puppies {
-  display: block;
+/*The first puppies covers 60% the screen on the mobile */
+.puppies-1 {
   width: 60%;
+  margin: 0 auto;
+}
+
+/*The second puppies covers 60% the screen on the mobile */
+.puppies-2 {
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -70,6 +76,7 @@ footer h1 {
     display: flex;
     width: 980px;
     justify-content: space-between;
+    margin: 0 auto;
   }
 
   /* making missing puppies section visible and giving width and height */
