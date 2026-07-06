@@ -1,0 +1,323 @@
+/* making margin, padding to zero */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* giving font-family for all things inside the body tag */
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+/* header styling */
+.header {
+  background-color: #1d1d1f;
+  font-size: 0.75em;
+  font-weight: 200;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  padding: 20px 0 0;
+}
+.header-navigation {
+  margin: 0 auto;
+  width: 1161px;
+}
+
+.navigation-wrapper ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  gap: 35px;
+  /* position: fixed; */
+}
+
+.navigation-wrapper ul li img {
+  width: 14px;
+}
+
+.navigation-wrapper ul li {
+  opacity: 0.8;
+  list-style: none;
+}
+.navigation-wrapper ul li:hover {
+  opacity: 1;
+}
+
+/* first section styling */
+.first-section {
+  background-image: url("../images/home/airpods_pro_3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+ 
+  margin-top: -20px;
+  /* z-index: 1; */
+  position: relative;
+}
+
+.first-section .bg-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: 1; */
+}
+
+.first-section-paragraph {
+  position: absolute;
+  display: block;
+  /* z-index: 2; */
+  color: #ffff;
+  right: 512px;
+  top: 400px;
+  text-align: center;
+}
+
+.first-section-paragraph .first-section-inner-paragraph {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0 0 30px;
+}
+
+.first-section-paragraph h1 {
+  font-size: 50px;
+  margin: 0 0 10px;
+}
+
+.first-section-buttons {
+  margin: 0 auto;
+}
+
+.first-section-btn1 {
+  color: #000;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 15px 24px;
+}
+
+.first-section-btn2 {
+  color: #ffff;
+  background-color: #36362c;
+  border-radius: 30px;
+  padding: 15px 24px;
+  margin: 0 15px 50px;
+  border: 1px solid #ffff;
+}
+
+.first-section-btn2:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* second section styling */
+.second-section {
+  background-image: url("../images/home/hero_iphone_family.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15px 0 0;
+  height: 100vh;
+  /* z-index: 1; */
+  position: relative;
+}
+
+.second-section .bg-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.second-section-paragraph {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  color: #000;
+  right: 500px;
+  top: 57px;
+  text-align: center;
+}
+
+.second-section-paragraph .second-section-inner-paragraph {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0 0 30px;
+}
+
+.second-section-paragraph h1 {
+  font-size: 50px;
+  margin: 0 0 10px;
+}
+
+.second-section-buttons {
+  margin: 0 auto;
+}
+
+.second-section-btn1 {
+  color: #f5f5f7;
+  background-color: #0071e3;
+  border-radius: 30px;
+  padding: 15px 24px;
+}
+.second-section-btn2 {
+  color: #0071e3;
+  background-color: #f5f5f7;
+  border-radius: 30px;
+  padding: 15px 24px;
+  margin: 0 15px 50px;
+  border: 1px solid #0071e3;
+}
+
+.second-section-btn2:hover {
+  background-color: #0071e3;
+  color: #f5f5f7;
+}
+
+/* Third section styling */
+
+.third-section {
+  background-image: url("../images/home/hero_college_students.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15px 0 0;
+  height: 100vh;
+
+  /* z-index: 1; */
+  position: relative;
+}
+
+.third-section .bg-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.third-section-paragraph {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  color: #000;
+  right: 500px;
+  top: 57px;
+  text-align: center;
+}
+
+.third-section-paragraph .third-section-inner-paragraph {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0 0 30px;
+}
+
+.third-section-paragraph h1 {
+  font-size: 50px;
+  margin: 0 0 10px;
+}
+
+.third-section-buttons {
+  margin: 0 auto;
+}
+
+.third-section-btn1 {
+  color: #f5f5f7;
+  background-color: #0071e3;
+  border-radius: 30px;
+  padding: 15px 24px;
+  opacity: 1;
+}
+
+.third-section-btn1:hover {
+  opacity: 0.8;
+}
+
+/* Styling the footer */
+
+.footer {
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  font-size: 0.7em;
+}
+
+.footer .footer-wrapper {
+  margin: 0 auto;
+  width: 1150px;
+}
+.footer-paragraph {
+  border-bottom: 1px solid #d2d2d7;
+  color: #1d1d1f;
+  padding: 25px 0 20px;
+}
+
+.footer-paragraph a {
+  text-decoration: underline;
+  color: #1d1d1f;
+}
+
+.footer-links-wrapper {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 20px 0 0;
+}
+.footer-wrapper ul {
+  list-style: none;
+  padding: 0 0 20px;
+}
+
+.footer-wrapper ul li {
+  padding: 5px 0;
+  font-size: 1em;
+}
+
+.footer-links-wrapper li:hover {
+  text-decoration: underline #1d1d1f solid 1px;
+}
+
+.footer-links-wrapper h3 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.more-ways-to-shop {
+  border-bottom: 1px solid #d2d2d7;
+  padding: 0 0 20px;
+  margin: 0 0 15px;
+}
+
+.more-ways-to-shop a {
+  color: #1166bb;
+  text-decoration: underline;
+}
+
+.copyright-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-terms-links ul li {
+  display: inline-block;
+  padding: 0 5px;
+  border-right: 1px solid #ccc;
+}
+.footer-terms-links ul li:last-child {
+  border-right: 0px;
+}
